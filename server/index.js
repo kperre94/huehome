@@ -3,8 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const device = require('express-device');
-const app = express();
 const db = require('./controllers/database');
+const huejay = require('huejay');
+const app = express();
 
 // MIDDLEWARE
 app.use(express.static(path.join(__dirname, "../client/dist/public/")));
