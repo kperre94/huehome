@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import Home from './components/Home';
+import Login from './components/Login';
 
 
-const initialState = {
-  isLoggedIn: false,
-  route: 'login',
-  user: {},
 
-}
 class App extends Component {
   constructor(props) {
     super(props);
       this.state = {
-        message: 'Hello World',
         user: {
-          name: 'Peyton',
-          home: 'current home'
+          id: '',
+          name: '',
+          email: '',
+          avatar: ''
         }
       }
   }
@@ -23,7 +22,7 @@ class App extends Component {
   render() { 
     return ( 
       <>
-        <div>{this.state.message}</div>
+        <Home />
       </>
     )
   }
