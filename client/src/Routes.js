@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './app.jsx';
+import Home from './components/Home.jsx';
 import Signin from './components/Signin.jsx';
 import Signup from './components/Signup.jsx';
 import Profile from './components/Profile';
 import Rooms from './components/Rooms';
 import Room from './components/Room';
+
 
 
 
@@ -19,7 +20,7 @@ class Routes extends Component {
           <Route path="/rooms" component={Rooms} />
           <Route path="/signup" component={Signup} />
           <Route path="/signin" component={Signin} />
-          <Route path="/" component={App} />
+          <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>
     )
