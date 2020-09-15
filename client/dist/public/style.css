@@ -1,0 +1,841 @@
+/* GLOBAL */
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Lato, sans-serif;
+}
+
+p {
+	color: #4f4f4f;
+	font-size: 17px;
+	line-height: 1.5em;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h5, h4 {
+	margin: 8px;
+	color: white;
+}
+
+.content {
+	margin: 50px 0;
+	position: relative;
+}
+
+input[type=text],
+select,
+textarea {
+	border: 1px solid #e2e2e2;
+	text-align: center;
+}
+
+button:focus,
+select:focus,
+input:focus {
+	outline: none;
+}
+
+input:focus,
+select:focus {
+	border-color: teal;
+}
+
+
+
+
+
+
+
+
+/* ICONS */
+.far.fa-bell {
+	font-size: 25px;
+}
+
+.fas.fa-home {
+	font-size: 25px;
+}
+
+.fas.fa-ellipsis-v {
+	font-size: 25px;
+}
+
+.fas.fa-user-circle {
+	font-size: 25px;
+}
+
+.fas.fa-sun {
+	font-size: 28px;
+	color: rgb(248, 223, 34);
+	/* margin: 0px 0px 0px 300px; */
+}
+
+.fas.fa-thermometer-half {
+	font-size: 25px;
+	margin: 0px 0px 0px 20px;
+	color: rgb(57, 105, 167);
+}
+
+.fas.fa-wind {
+	font-size: 25px;
+	margin: 0px 0px 0px 20px;
+}
+
+.fas.fa-calendar-alt {
+	font-size: 25px;
+	/* margin: 0px 0px 0px 90px; */
+}
+
+.fas.fa-unlock-alt {
+	font-size: 25px;
+	/* margin: 0px 0px 0px 10px; */
+}
+
+.fas.fa-wifi {
+	font-size: 25px;
+}
+
+.fas.fa-thumbtack {
+	font-size: 15px;
+}
+
+.fas.fa-fingerprint {
+	font-size: 25px;
+}
+
+.fas.fa-palette {
+	font-size: 25px;
+}
+
+.fas.fa-warehouse {
+	font-size: 25px;
+}
+.fas.fa-map-marker {
+	font-size: 20px;
+}
+
+/* .fas.fa-video {
+	color: teal;
+} */
+
+/* .far.fa-bookmark {
+	color: teal;
+} */
+
+.fa-lightbulb.fas {
+	color: rgb(248, 223, 34);
+}
+
+.fas.fa-microphone-alt {
+	font-size: 25px;
+}
+
+.fas.fa-toggle-on {
+	font-size: 30px;
+	text-align: right;
+	color: teal;
+}
+
+.fas.fa-sliders-h {
+	font-size: 25px;
+	margin: 7px;
+	position: relative;
+	top: 12px;
+	right: 12px;
+	/* padding: 90px; */
+}
+
+.far.fa-bell {
+	font-size: 25px;
+	margin: 7px;
+	position: relative;
+	top: 12px;
+	left: 12px;
+	/* padding: 90px; */
+}
+
+.fas.fa-pencil-alt {
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* BACKGROUNDS */
+
+.room-background {
+	background-color: rgb(182, 179, 179);
+	background-size: cover;
+	height: 100vh;
+}
+
+.login {
+  background-image: url('./images/bg.png');
+  background-size: cover;
+  /* height: 800px; */
+}
+
+.home {
+  background-image: url('./images/floorplans/home.png');
+  /* background-size: cover; */
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+
+.settings {
+  background-image: url('./images/setting.png');
+  background-size: cover;
+}
+
+.floorplan {
+	background-image: url('./images/floorplans/layoutfal.png');
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.settings-list {
+	border: 1px solid white;
+	background-color: teal;
+	padding: 8px 5px;
+}
+.profile-background {
+	background-image: url('./images/profile.png');
+	background-size: cover;
+	height: 100vh;
+}
+
+.opacity {
+	background: rgba(228, 226, 226, 0.4);
+	height: 100vh;
+}
+
+.pool {
+	background-image: url('./images/pool.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* grid */
+.grid {
+	display: grid;
+}
+
+.grid.center {
+	grid-template-columns: 400px;
+	justify-content: center;
+}
+
+.grid.sidemenu-left {
+	grid-template-columns: 200px auto;
+	grid-column-gap: 100px;
+}
+
+.grid.three {
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.grid.five {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.grid.medium {
+	grid-template-columns: 1000px;
+	justify-content: center;
+}
+
+.grid.large {
+	padding: 30px 50px;
+}
+
+.grid.middle {
+	align-content: center;
+}
+
+.grid.tall {
+	height: 100vh;
+}
+
+.grid.image {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.grid.image > .card {
+	background: white;
+	border: none;
+}
+
+ul.grid {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+ul.grid.two {
+	grid-row-gap: 0;
+}
+
+.grid + h2 {
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CARD */
+.card {
+	border: 2px solid #e2e2e2;
+	/* border: 2px solid #f5f4f4; */
+	border-radius: 6px;
+	height: fit-content;
+	/* background-color: rgb(255, 255, 255, 0.4); */
+	background-color: rgba(228, 226, 226, 0.5);
+}
+
+a.card {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+
+.card > .content {
+	padding: 20px;
+	margin: 0;
+}
+
+.card.shadow {
+	border: none;
+	box-shadow: 0 2px 90px rgba(0,0,0,.1);
+}
+
+.card.link {
+	cursor: pointer;
+}
+
+.card.link:hover {
+	box-shadow: 0 2px 20px rgba(0,0,0,.1);
+}
+
+.card .image {
+	border-radius: 6px 6px 0 0;
+	height: 160px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.card .image > .icon {
+	/* display : block; */
+	position: relative;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 10px;
+	margin: 5px;
+	background: transparent;
+	border: none;
+	color: white;
+	height: 24px;
+}
+
+.card .content > .icon {
+	display: block;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 0;
+	background: transparent;
+	border: none;
+	color: white;
+	height: 24px;
+}
+
+.card .image > .icon i.far {
+	color: white;
+}
+
+.card p.footer {
+	margin-bottom: 0;
+	font-size: 15px;
+}
+
+.card .content small.meta {
+	color: black;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.card h2 {
+	font-size: 20px;
+}
+
+.colorpicker {
+	/* display: none; */
+	width: 20px;
+}
+
+
+
+
+
+
+
+
+form input {
+	width: 100%;
+	height: 50px;
+	font-size: 16px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #e2e2e2;
+}
+
+form label {
+	display: block;
+	margin-bottom: 8px;
+	color: black;
+}
+
+select {
+	width: 100%;
+	height: 50px;
+	background: white;
+	font-size: 16px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #e2e2e2;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* BUTTONS */
+
+button,
+.button {
+	background: white;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #e2e2e2;
+	font-size: 16px;
+	height: 50px;
+	padding: 14px 15px;
+	cursor: pointer;
+	color: black;
+	transition: background-color .3s, border .3s, color .3s;
+  margin: 5px;
+}
+
+button:hover,
+.button:hover {
+	background: #f5f5f5;
+}
+
+.fa-lightbulb.far {
+	color: teal;
+}
+.fa-lightbulb.far:hover {
+	color: white;
+}
+
+small i + span {
+	margin-left: 10px;
+}
+
+.focus {
+	width: 75px;
+	margin: 50px;
+}
+
+.focus:hover {
+	height: 400px;
+	width: 800px;
+	position: relative;
+	background-image: url('./floorplan.png');
+}
+
+
+
+
+
+
+
+
+
+/* NAV */
+
+nav {
+	padding: 10px 50px;
+	display: grid;
+	grid-template-columns: 60px auto 40px;
+	grid-column-gap: 10px;
+	/* border-bottom: 1px solid #e2e2e2; */
+}
+
+nav .logo {
+	width: 100%;
+	height: 30px;
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+nav .fa {
+	text-align: left;
+}
+
+nav .profile {
+	text-align: center;
+}
+
+nav .profile a {
+	border-radius: 3px;
+	font-size: 13px;
+	height: 32px;
+	padding: 5px 10px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav .profile .avatar {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+nav .profile a span {
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+/* USER */
+
+.user {
+	text-align: left;
+	font-size: 18px;
+	display: grid;
+	grid-template-columns: 50px auto;
+	grid-column-gap: 10px;
+	cursor: pointer;
+}
+
+.user .avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.user small {
+	display: block;
+	font-size: 12px;
+	margin: 5px 0 1px 0;
+	color: #969696;
+}
+
+small + .user {
+	margin-top: 30px;
+}
+
+.user + .card {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+/* SIDEMENU */
+
+.sidemenu {
+	margin-top: 50px;
+}
+
+.sidemenu ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.sidemenu ul li a {
+	font-size: 16px;
+	padding: 18px 20px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background .3s;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.sidemenu ul li a > .icon {
+	position: relative;
+	left: 140px;
+}
+
+.sidemenu li a:hover {
+	background: #f5f4f4;
+}
+
+
+.sidemenu ul li.active a {
+	background: #00988f;
+	color: white;
+}
+
+
+
+
+/* GALLERY */
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.gallery .image-main {
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.gallery .image-main button {
+	height: 30px;
+}
+
+.gallery .image-main .icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 30px;
+	line-height: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+
+.gallery .image-main .icon i {
+	color: white;
+}
+
+.gallery .thumbnails {
+	padding: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 30px;
+}
+
+.gallery .thumbnail {
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	transition: opacity .3s;
+}
+
+.gallery .thumbnail:hover,
+.gallery .thumbnail.selected {
+	opacity: .5;
+}
+
+
+
+
+
+
+
+
+/* DROPDOWN */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+	border-radius: 4px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	margin: 10px;
+	right: 40px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f5f5f5;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+
+
+
+
+
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.hidden {display:none}
