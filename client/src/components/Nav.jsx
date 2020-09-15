@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
-import Sidebar from './Sidebar';
 import 'regenerator-runtime';
+import { Link } from 'react-router-dom';
+import { get } from '../lib/api.js';
+import Sidebar from './Sidebar';
 
 class Nav extends Component {
   constructor(props) {
@@ -33,7 +33,7 @@ toggleDropdown() {
 
   async getWeather() {
     try {
-      let weather = await axios.get('http://api.weatherstack.com/current', 
+      let weather = await get ('http://api.weatherstack.com/current', 
       { params: { 
         access_key: '992b72fce74d72ad683fffe306ab64d7',
         query: 'Austin Texas',
@@ -72,7 +72,6 @@ toggleDropdown() {
           <div className="profile">
             <div className="button">
             <i className="fas fa-sun"></i>
-            {/* <i className="fas fa-cloud-sun"></i> */}
             <i> {this.state.weather.temperature}°</i>
             <i style={{fontSize: "25px", marginRight: "12px", marginLeft: "20px"}}>{this.state.date}</i>
             <i className="fa fas fa-thermometer-half"></i><i> 72°</i>
