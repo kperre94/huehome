@@ -72,6 +72,7 @@ toggleDropdown() {
           <div className="profile">
             <div className="button">
             <i className="fas fa-sun"></i>
+            {/* <i className="fas fa-cloud-sun"></i> */}
             <i> {this.state.weather.temperature}°</i>
             <i style={{fontSize: "25px", marginRight: "12px", marginLeft: "20px"}}>{this.state.date}</i>
             <i className="fa fas fa-thermometer-half"></i><i> 72°</i>
