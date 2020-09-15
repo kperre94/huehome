@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import 'regenerator-runtime';
 import { Link } from 'react-router-dom'
-import axios from 'axios';
 import { post } from '../lib/api.js';
 
 
@@ -34,7 +34,7 @@ class Signin extends Component {
         //   pathname: `/`
         // })
       // }
-      post('signin', {
+      post ('signin', {
       email: this.state.email,
       password: this.state.password
     }).then(res => {
