@@ -10,8 +10,14 @@ const Thumbnail = (props) => {
             </button>
           </div>
           <div className="content">
-            <small className="meta">light • {props.light[1].state.on ? "ON" : "off"}</small>
+            <small className="meta">light • {props.light[1].state.on ? "on" : "off"}</small>
             <h2>{props.light[1].name}</h2>
+            <h5>{props.light.name}</h5>
+            <button onClick={() => props.toggleColorpicker(props.index, props.light[0])} className="icon">
+              <i className="fas fa-palette"></i>
+            </button>
+              <div className={props.light[1]['colorpicker'] ? "colorpicker" : "hidden"}>
+              </div>
           </div>
         </div>
       </>
