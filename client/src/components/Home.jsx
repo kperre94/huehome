@@ -28,7 +28,7 @@ class Home extends Component {
     try {
       let state = !this.state.userLights[i][1].state.on;
       let light = await get (`/lights/${index}`, { on: state})
-      console.log(light)
+      // console.log(light)
       this.setState({ light });
     } catch (e) { console.log(e)};
   }
@@ -64,7 +64,7 @@ class Home extends Component {
             userLights.push([key, obj[key], obj[key].colorpicker = false]);
           }
           this.setState({ userLights });
-          console.log(this.state.userLights)
+          // console.log(this.state.userLights)
     } catch (e) { console.log(e)};
   }
 
