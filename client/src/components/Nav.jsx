@@ -33,7 +33,7 @@ toggleDropdown() {
 
   async getWeather() {
     try {
-      let weather = await get ('http://api.weatherstack.com/current', 
+      let weather = await get('http://api.weatherstack.com/current', 
       { params: { 
         access_key: '992b72fce74d72ad683fffe306ab64d7',
         query: 'Austin Texas',
@@ -53,7 +53,7 @@ toggleDropdown() {
 
   async componentDidMount() {
     try {
-      this.getWeather();
+      // this.getWeather();
       this.getTime();
     } catch (e) {console.log(e)};
   }
