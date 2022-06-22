@@ -12,7 +12,7 @@
   "author": "Peyton Perret",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "axios": "^0.19.2",
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
