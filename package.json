@@ -24,7 +24,7 @@
     "huejay": "^1.9.0",
     "jsonwebtoken": "^8.5.1",
     "mkdirp": "^1.0.4",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.25",
     "mysql": "^2.18.1",
     "node-hue-api": "^4.0.7",
